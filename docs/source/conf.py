@@ -15,6 +15,7 @@ author = 'Dr. Subir Sarkar'
 
 extensions = [
     'nbsphinx',
+    'sphinx.ext.mathjax',
     'sphinx_rtd_theme',  # optional
 ]
 
