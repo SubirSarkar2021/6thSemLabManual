@@ -13,3 +13,7 @@ This document contains program codes of the Statistical Mechanics problems.
    :maxdepth: 2
    :caption: Contents:
 
+   PythonSphinx\BlackBodyRadiation
+   PythonSphinx\SpecificHeat
+   PythonSphinx\PartitionFunction
+

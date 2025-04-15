@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Body Radiation &mdash; 6th Sem Lab Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            6th Sem Lab Manual
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Black Body Radiation</a><ul>
+<li><a class="reference internal" href="#Classical-approach">Classical approach</a><ul>
+<li><a class="reference internal" href="#Rayleigh-Jeans">Rayleigh-Jeans</a></li>
+<li><a class="reference internal" href="#Wien's-law">Wien’s law</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Quantum-approach">Quantum approach</a><ul>
+<li><a class="reference internal" href="#Wien's-displacement-law">Wien’s displacement law</a></li>
+<li><a class="reference internal" href="#Stefan's-law">Stefan’s law</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">6th Sem Lab Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Black Body Radiation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/PythonSphinx/BlackBodyRadiation.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="Black-Body-Radiation">
+<h1>Black Body Radiation<a class="headerlink" href="#Black-Body-Radiation" title="Link to this heading"></a></h1>
+<p>A body which absorbs radiation of any frequency incident on it is called <strong>black body</strong>. The spectral distribution of black-body radiation was one of the earliest problems which baffled physicists because the experimental results could not be explained by the existing theory available during that time. At low frequency, it can be explained by rayleigh-Jeans law and at higher frequency, it can be explained by Wien’s law.</p>
+<section id="Classical-approach">
+<h2>Classical approach<a class="headerlink" href="#Classical-approach" title="Link to this heading"></a></h2>
+<section id="Rayleigh-Jeans">
+<h3>Rayleigh-Jeans<a class="headerlink" href="#Rayleigh-Jeans" title="Link to this heading"></a></h3>
+<p>The energy per unit volume in the frequency range <span class="math notranslate nohighlight">\(\nu\)</span> and <span class="math notranslate nohighlight">\(\nu + d\nu\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[u(\nu)d\nu = \frac{8\pi k T}{c^3} \nu^2 d\nu\]</div>
+<p>and in terms of wavelength</p>
+<div class="math notranslate nohighlight">
+\[u(\lambda)d\lambda = \frac{8\pi k T}{\lambda^4} d\lambda\]</div>
+</section>
+<section id="Wien's-law">
+<h3>Wien’s law<a class="headerlink" href="#Wien's-law" title="Link to this heading"></a></h3>
+<p>Using thermodynamic concept, Stefan showed that energy density can be written as</p>
+<div class="math notranslate nohighlight">
+\[u(\nu)d\nu = \frac{8\pi h }{c^3} e^{-\frac{h\nu}{kT}}\nu^3 d\nu\]</div>
+<p>and in terms of wavelength</p>
+<div class="math notranslate nohighlight">
+\[u(\lambda)d\lambda = \frac{8\pi h c}{\lambda^5}e^{-\frac{h c}{\lambda k T}}d\lambda\]</div>
+</section>
+</section>
+<section id="Quantum-approach">
+<h2>Quantum approach<a class="headerlink" href="#Quantum-approach" title="Link to this heading"></a></h2>
+<p>In 1900, Max Planck took the challenge of explaining the spectral distribution of black-body radiation by introducing quantum concept. According to Planck, the emission and absorption of electromagnetic radiation take place in terms of quantum of energy. The energy of photons per unit volume of the enclosure in the frequency range <span class="math notranslate nohighlight">\(\nu\)</span> and <span class="math notranslate nohighlight">\(\nu + d\nu\)</span> is given by</p>
+<p><span class="math">\begin{align}
+u(\nu)d\nu = \frac{8\pi h}{c^3}\frac{\nu^3d\nu}{e^{h\nu/kT}-1}
+\end{align}</span></p>
+<p>This is <strong>Planck’s formula for black-body radiation</strong>.</p>
+<p>In terms of wavelength, the Planck’s formula becomes <span class="math">\begin{align}
+u(\lambda)d\lambda = \frac{8\pi h c}{\lambda^5}\frac{d\lambda}{e^{h c/\lambda k T} - 1}
+\end{align}</span></p>
+<p>On longer wavelength side, <span class="math notranslate nohighlight">\(hc/\lambda &lt;&lt; kT\)</span>, so the above relation becomes</p>
+<p><span class="math">\begin{align}
+u(\lambda)d\lambda = \frac{8\pi k T}{\lambda^4}
+\end{align}</span></p>
+<p>This is <strong>Rayleigh-Jeans formula</strong>.</p>
+<p>On the shorter wavelength side, <span class="math notranslate nohighlight">\(hc/\lambda &gt;&gt; kT\)</span>, so the above relation becomes</p>
+<p><span class="math">\begin{align}
+u(\lambda)d\lambda = \frac{8 \pi h c}{\lambda^5} e^{-hc/\lambda k T} d\lambda
+\end{align}</span></p>
+<p>This is <strong>Wien’s radiation formula</strong>.</p>
+<section id="Wien's-displacement-law">
+<h3>Wien’s displacement law<a class="headerlink" href="#Wien's-displacement-law" title="Link to this heading"></a></h3>
+<p>The wavelength corresponding to the maximum energy density in the black body radiation bears a linear relationship as shown below -</p>
+<div class="math notranslate nohighlight">
+\[\lambda_{\text{max}}\cdot T = \text{constant}\]</div>
+<p>This represents that with increasing temperature, maximum wavelength shifts towards shorter wavelength side.</p>
+</section>
+<section id="Stefan's-law">
+<h3>Stefan’s law<a class="headerlink" href="#Stefan's-law" title="Link to this heading"></a></h3>
+<p>Total energy emitted by a black body can be estimated by integrating the formula for all wavelengths, i.e. <span class="math">\begin{align}
+\int_{0}^{{\infty}}u(\lambda)d\lambda = \int_{0}^{{\infty}}\frac{8\pi h c}{\lambda^5}\frac{d\lambda}{e^{h c/\lambda k T} - 1}
+\end{align}</span> The energy emitted per unit area per second is given by <span class="math">\begin{align}
+E = \frac{uc}{4}
+\end{align}</span> This energy maintains a linear relationship with fourth power of temperature, i.e. \begin{align} E = :nbsphinx-math:<a href="#id1"><span class="problematic" id="id2">`</span></a>sigma <a href="#id3"><span class="problematic" id="id4">`</span></a>T^4 \end{align} This is called Stefan’s law.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">const</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h</span> <span class="o">=</span> <span class="n">const</span><span class="o">.</span><span class="n">h</span>
+<span class="n">kB</span> <span class="o">=</span> <span class="n">const</span><span class="o">.</span><span class="n">k</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">const</span><span class="o">.</span><span class="n">c</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">700</span><span class="p">,</span> <span class="mi">1000</span><span class="o">+</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">wl</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.005</span><span class="p">)</span><span class="o">*</span><span class="mf">1e-6</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">uP</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">wl</span><span class="p">):</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="n">wl</span><span class="o">**</span><span class="mi">5</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="p">(</span><span class="n">wl</span><span class="o">*</span><span class="n">kB</span><span class="o">*</span><span class="n">T</span><span class="p">)</span>
+    <span class="n">uval</span> <span class="o">=</span> <span class="n">A</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">uval</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">uRJ</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">wl</span><span class="p">):</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">kB</span><span class="o">*</span><span class="n">T</span>
+    <span class="n">uval</span> <span class="o">=</span> <span class="n">A</span><span class="o">/</span><span class="n">wl</span><span class="o">**</span><span class="mi">4</span>
+    <span class="k">return</span> <span class="n">uval</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">uW</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">wl</span><span class="p">):</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">c</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="p">(</span><span class="n">wl</span><span class="o">*</span><span class="n">kB</span><span class="o">*</span><span class="n">T</span><span class="p">)</span>
+    <span class="n">uval</span> <span class="o">=</span> <span class="n">A</span><span class="o">/</span><span class="n">wl</span><span class="o">**</span><span class="mi">5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">uval</span>
+
+<span class="n">UP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">wl</span><span class="p">)])</span>
+
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">wl</span><span class="p">)):</span>
+        <span class="n">UP</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">uP</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">wl</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wl</span><span class="p">,</span> <span class="n">UP</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;T = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;K&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$\lambda$ in $A^{\circ}$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;$u(\lambda)d\lambda$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Black Body Radiation&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/PythonSphinx_BlackBodyRadiation_3_0.png" src="../_images/PythonSphinx_BlackBodyRadiation_3_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Wien</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)):</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">UP</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:])</span>
+    <span class="n">Wien</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">wl</span><span class="p">[</span><span class="n">p</span><span class="p">]])</span>
+<span class="n">Wien</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Wien</span><span class="p">)</span>
+<span class="n">T</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Wien</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>  <span class="n">Wien</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">T</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="s1">&#39;-ro&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{T}</span><span class="s2">$ in K&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;$\lambda_</span><span class="si">{max}</span><span class="s2">$ in $\mu$m&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">slope</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">T</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
+<span class="n">slope</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%0.3e</span><span class="s1">&#39;</span><span class="o">%</span><span class="k">Decimal</span>(slope)
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.0013</span><span class="p">,</span> <span class="mf">3.2e-6</span><span class="p">,</span> <span class="s2">&quot;Wien&#39;s const = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">slope</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; meter-Kelvin&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/PythonSphinx_BlackBodyRadiation_4_0.png" src="../_images/PythonSphinx_BlackBodyRadiation_4_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">UPlanck</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">wl</span><span class="p">))</span>
+<span class="n">URJ</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">UPlanck</span><span class="p">)</span>
+<span class="n">UW</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">UPlanck</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1000</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">wl</span><span class="p">)):</span>
+            <span class="n">UPlanck</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">uP</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">wl</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">URJ</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">uRJ</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">wl</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">UW</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">uW</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">wl</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wl</span><span class="p">,</span> <span class="n">UPlanck</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Planck&#39;s law&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wl</span><span class="p">,</span> <span class="n">URJ</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Rayleigh-Jean&#39;s law&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wl</span><span class="p">,</span> <span class="n">UW</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Wien&#39;s law&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.3e-5</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="s2">&quot;T = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;K&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/PythonSphinx_BlackBodyRadiation_5_0.png" src="../_images/PythonSphinx_BlackBodyRadiation_5_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Stefan&#39;s law</span>
+<span class="n">E</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">wl</span><span class="p">)):</span>
+        <span class="n">UP</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">uP</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">wl</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+    <span class="n">Usum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">UP</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:])</span>
+    <span class="n">Uarea</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">UP</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:])</span><span class="o">*</span><span class="mf">0.005</span><span class="o">*</span><span class="mf">1e-6</span>
+    <span class="n">E</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">Uarea</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">T4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">slope</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">T4</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T4</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="s1">&#39;-ro&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Stefan&#39;s law&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$T^4$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.6</span><span class="o">*</span><span class="mf">1e12</span><span class="p">,</span> <span class="mf">2e4</span><span class="p">,</span> <span class="s2">&quot;Stefan&#39;s const. = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">slope</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; $Wm^{-2}K^{-4}$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/PythonSphinx_BlackBodyRadiation_6_0.png" src="../_images/PythonSphinx_BlackBodyRadiation_6_0.png" />
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Dr. Subir Sarkar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
