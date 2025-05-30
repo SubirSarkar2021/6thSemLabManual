@@ -22,9 +22,7 @@
       <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Computation of the Partition Function ( Z(\(\beta\)) )" href="PartitionFunction.html" />
-    <link rel="prev" title="Black Body Radiation" href="BlackBodyRadiation.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,14 +45,9 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="BlackBodyRadiation.html">Black Body Radiation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Specific Heat of Solids</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#Dulong-Petit's-law">Dulong Petit’s law</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Debye's-theory-of-specific-heat">Debye’s theory of specific heat</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Debye-temperature-for-certain-substance">Debye temperature for certain substance</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="SpecificHeat.html">Specific Heat of Solids</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PartitionFunction.html">Computation of the Partition Function ( Z(<span class="math notranslate nohighlight">\(\beta\)</span>) )</a></li>
 </ul>
 
@@ -74,7 +67,7 @@
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Specific Heat of Solids</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/PythonSphinx/SpecificHeat.ipynb.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/PythonSphinx/SpecificHeatDebye.ipynb.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -157,7 +150,7 @@ C_v=\frac{\partial U}{\partial T}= 9Nk_B\left(\frac{T}{T_D}\right)^3\int_{0}^{x_
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
@@ -199,7 +192,7 @@ C_v=\frac{\partial U}{\partial T}= 9Nk_B\left(\frac{T}{T_D}\right)^3\int_{0}^{x_
 </div>
 </div>
 <div class="nboutput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -211,11 +204,11 @@ Text(0, 0.5, &#39;Specific Heat&#39;)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/PythonSphinx_SpecificHeat_4_1.png" src="../_images/PythonSphinx_SpecificHeat_4_1.png" />
+<img alt="../_images/PythonSphinx_SpecificHeatDebye_4_1.png" src="../_images/PythonSphinx_SpecificHeatDebye_4_1.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="n">Td_Pb</span>
@@ -235,7 +228,7 @@ Text(0, 0.5, &#39;Specific Heat&#39;)
 </div>
 </div>
 <div class="nboutput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -247,7 +240,7 @@ Text(0, 0.5, &#39;Specific Heat ($C_v$)&#39;)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/PythonSphinx_SpecificHeat_5_1.png" src="../_images/PythonSphinx_SpecificHeat_5_1.png" />
+<img alt="../_images/PythonSphinx_SpecificHeatDebye_5_1.png" src="../_images/PythonSphinx_SpecificHeatDebye_5_1.png" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">
@@ -264,10 +257,7 @@ Text(0, 0.5, &#39;Specific Heat ($C_v$)&#39;)
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="BlackBodyRadiation.html" class="btn btn-neutral float-left" title="Black Body Radiation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="PartitionFunction.html" class="btn btn-neutral float-right" title="Computation of the Partition Function ( Z(\(\beta\)) )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
